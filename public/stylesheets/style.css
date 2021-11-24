@@ -1,0 +1,185 @@
+
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: black;
+
+  background-color: #b5c4b1;
+}
+h1 {
+  text-align: center;
+  color:rgb(201,158,78);
+
+}
+
+h2 {
+  text-align: center;
+  color:rgb(201,158,78);
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-family: 'Khula', sans-serif;
+  color: #e28743;
+
+  margin: 10px;
+}
+
+h4 {
+  font-family: 'Khula', sans-serif;
+  color: rgb(144,59,28);
+
+  margin: 10px;
+}
+
+li{
+  font-size: larger;
+}
+
+a {
+  color: #c99833;
+}
+.titlePic{
+  max-width: 100%;
+}
+.wrapper{
+  background: url("/public/images/2.jpg") no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 10%;
+  height: 750px;
+  padding: 100px;
+
+
+  box-shadow: 0 0 20px 5px hsl(354, 23%, 84%);
+}
+
+
+
+.inner{
+  background-color: rgba(216,202,175,0.9);
+  height: 600px;
+  padding-top: 200px;
+
+}
+
+.inner h1{
+  color: #eeeee4;
+}
+
+
+.navbar  {
+  text-align: center;
+  background-color: #b5c576;
+
+  transition: background-color 0.5s;
+}
+.link{
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #e28743;
+
+  border-radius: 8px;
+  padding: 5px;
+
+  color: #e28743;
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+
+
+}
+.link:hover{
+  color: #fff;
+  box-shadow:inset 0 0 0 1px rgba(226,135,67,1);
+
+}
+
+
+.container {
+  position: relative;
+
+}
+
+
+
+
+.main-section{
+  padding: 5%;
+
+}
+
+.titleAboutMe{
+  padding: 25px;
+  background-color: #eeeee4;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 5px hsl(48, 100%, 20%);
+}
+
+.list-group-item {
+  background-color: #eeeee4;
+  border-style: none ;
+  color: #76b5c5;
+}
+.cardNew{
+  padding: 12px;
+  position: relative;
+  margin: 20px auto;
+  box-shadow: 0 0 25px 15px hsl(108, 20%, 70%);
+  min-height: 100%;
+}
+
+.project-title{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #FFF;
+  padding: 15px 20px;
+  background: rgba(150,84,84,0.3);
+  transition: all 0.15s linear;
+  border-radius: 50px;
+
+
+}
+.project-title:hover{
+  padding: 10px 15px;
+
+}
+.cardNew img{
+  max-width: 100%;
+
+  filter: blur(2px);
+  margin:5px;
+  transition: all 0.20s linear;
+}
+.cardNew:hover img{
+  filter: none;
+  margin:0px;
+
+
+}
+
+.pro-photo{
+  background-size: cover;
+}
+
+#contact{
+  margin: 150px;
+  padding: 35px;
+  background-color: #eeeee4;
+  border-radius: 10px;
+
+
+}
+.form-label{
+  font-size: large;
+  color: orange;
+}
+
+.btn-primary{
+  background-color: darkred;
+}
+
+
