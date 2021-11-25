@@ -1,23 +1,23 @@
 const mongoose = require('mongoose')
 const {Schema} = require("mongoose");
 
-var ApplicationSchema = new mongoose.Schema({
+var applicationSchema = new mongoose.Schema({
 
-    postDate:date,
-    applyDate: date,
-    applyDeadline:date,
+    postDate:Date,
+    applyDate: Date,
+    applyDeadline:Date,
 
-    company: string,
-    jobPosition: string,
-    jobType:string,
-    jobLocation:string,
-    qualifications:string,
-    termLength:string,
-    startTime:date,
-    jobDuty:string,
-    salary:string,
-    experience:string,
-    education:string,
+    company: String,
+    jobPosition: String,
+    jobType:String,
+    jobLocation:String,
+    qualifications:String,
+    termLength:String,
+    startTime:Date,
+    jobDuty:String,
+    salary:String,
+    experience:String,
+    education:String,
 
     owner:{
         type: Schema.Types.ObjectId,
@@ -28,4 +28,4 @@ var ApplicationSchema = new mongoose.Schema({
 
 })
 
-module.exports = mongoose.model("Application",ApplicationSchema)
+module.exports = mongoose.model("Application",applicationSchema)

@@ -9,6 +9,41 @@ var logger = require('morgan');
 var app = express();
 const globals = require('./config/globals')
 
+
+
+// passport for auth, express-session for session mgmt
+const passport = require('passport')
+const session = require('express-session')
+
+// 1 - configure app to use sessions w/some required options
+app.use(session({
+    secret: 'someRandomString@123',
+    resave: true,
+    saveUninitialized: false
+}))
+
+// 2 - enable passport w/session support
+
+app.use(passport.initialize())
+app.use(passport.session())
+
+
+// 3 - link passport to User model with extends passport-local-mongoose
+const User = require('./models/user')
+passport.use(User.createStrategy())
+
+// 4 - set passport to read/write User data to/from the session object
+passport.serializeUser(User.serializeUser())
+passport.deserializeUser(User.deserializeUser())
+
+
+
+
+
+
+
+
+
 //controllers
 
 var indexRouter = require('./controllers/index');

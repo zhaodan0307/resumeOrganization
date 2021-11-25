@@ -1,0 +1,40 @@
+<section class="main-section ">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <div class="card">
+                    <h1 class="card-title text-center ">REGISTER</h1>
+                    <div class="card-body py-md-4">
+                        <form class="form" method="post">
+                            <div class="form-group">
+                                <input name="username" type="email" class="form-control" id="username" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input name="password" type="password" class="form-control" id="password" placeholder="Password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"/>
+
+                            </div>
+                            <div class="form-group">
+                                <input name="confirm" type="password" class="form-control" id="confirm" placeholder="confirm-password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+                                <p style="color: darkslateblue">Minimum eight characters, at least one letter and one number:</p>
+                            </div>
+                            <div class="d-flex flex-row align-items-center justify-content-between">
+
+                                <a class="col" href="/login">Already have an account?  <span style="color: brown">Login</span></a>
+
+
+                                <button class="btn btn-primary">Create Account</button>
+                                <button class="btn btn-primary">Create Account with GitHub</button>
+                            </div>
+
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+

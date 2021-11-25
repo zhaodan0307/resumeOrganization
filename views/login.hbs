@@ -1,0 +1,44 @@
+
+
+<section class="main-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <div class="card">
+                    <h1 class="card-title text-center">LOGIN</h1>
+                    <div class="card-body py-md-4">
+                        <form class="form" method="post">
+                            <div class="form-group">
+                                <input name="username" type="email" class="form-control" id="username" placeholder="Email" required  />
+                            </div>
+                            {{#if messages}}
+                                <div class="alert alert-danger">
+                                    {{messages}}
+                                </div>
+
+                            {{/if}}
+                            <div class="form-group">
+                                <input name="password" type="password" class="form-control" id="password" placeholder="Password" required/>
+                            </div>
+
+                            <div class="d-flex flex-row align-items-center justify-content-between">
+
+                                <a class="col" href="/register">Don't have an account?  <span style="color: brown">Sign up</span> Here</a>
+
+
+                                <button class="btn btn-primary">Log in</button>
+                                <button class="btn btn-primary">Log in with GitHub</button>
+                            </div>
+
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>

@@ -8,6 +8,7 @@ body {
   background-color: #b5c4b1;
 }
 h1 {
+  margin-top: 20px;
   text-align: center;
   color:rgb(201,158,78);
 
@@ -26,11 +27,10 @@ h3 {
   margin: 10px;
 }
 
-h4 {
+h8{
   font-family: 'Khula', sans-serif;
   color: rgb(144,59,28);
-
-  margin: 10px;
+  padding: 10px;
 }
 
 li{
@@ -44,7 +44,7 @@ a {
   max-width: 100%;
 }
 .wrapper{
-  background: url("/public/images/2.jpg") no-repeat center center;
+  background: url("../images/back1.jpg") no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
   padding: 10%;
@@ -90,7 +90,8 @@ a {
 
 }
 .link:hover{
-  color: #fff;
+  color: firebrick;
+  background-color: #fff;
   box-shadow:inset 0 0 0 1px rgba(226,135,67,1);
 
 }
@@ -121,65 +122,52 @@ a {
   border-style: none ;
   color: #76b5c5;
 }
-.cardNew{
-  padding: 12px;
-  position: relative;
-  margin: 20px auto;
-  box-shadow: 0 0 25px 15px hsl(108, 20%, 70%);
-  min-height: 100%;
-}
-
-.project-title{
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 25px;
-  font-weight: bold;
-  color: #FFF;
-  padding: 15px 20px;
-  background: rgba(150,84,84,0.3);
-  transition: all 0.15s linear;
-  border-radius: 50px;
 
 
-}
-.project-title:hover{
-  padding: 10px 15px;
-
-}
-.cardNew img{
-  max-width: 100%;
-
-  filter: blur(2px);
-  margin:5px;
-  transition: all 0.20s linear;
-}
-.cardNew:hover img{
-  filter: none;
-  margin:0px;
-
-
-}
-
-.pro-photo{
-  background-size: cover;
-}
 
 #contact{
   margin: 150px;
   padding: 35px;
   background-color: #eeeee4;
-  border-radius: 10px;
+
 
 
 }
-.form-label{
+.form-title{
   font-size: large;
   color: orange;
 }
 
+.card{
+  border: 0.20rem solid #e28743;
+  top: 10%;
+  border-radius: 15px;
+
+  box-shadow: 0 0 20px 5px hsl(354, 23%, 84%);
+}
+.form-control{
+  background-color: #f8f9fa;
+
+  padding: 25px 15px;
+  margin-bottom: 1.3rem;
+  border: 0.10rem solid darkseagreen;
+}
+
 .btn-primary{
   background-color: darkred;
+  margin-left: 3px;
+  border-color: #b5c576;
+}
+.btn-primary:hover{
+  background-color: darkslategrey;
+
+
+}
+
+.register-form{
+  background: url("../images/2.jpg") no-repeat center center;
+
+
 }
 
 
