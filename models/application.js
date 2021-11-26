@@ -7,8 +7,7 @@ var applicationSchema = new mongoose.Schema({
     postDate:Date,
     applyDate:Date,
     applyDeadline:Date,
-    startTime:Date,
-
+    startDay:Date,
     company:String,
     position:String,
     type:String,

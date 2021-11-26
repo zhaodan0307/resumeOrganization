@@ -64,10 +64,17 @@ router.post('/create', authCheck,(req, res) => {
         postDate: req.body.postDate,
         applyDate: req.body.applyDate,
         applyDeadline: req.body.applyDeadline,
+        startDay:req.body.startDay,
         company: req.body.company,
-        jobPosition: req.body.applyDeadline,
-
-
+        position: req.body.position,
+        type:req.body.type,
+        location:req.body.location,
+        qualification:req.body.qualification,
+        term:req.body.term,
+        duty:req.body.duty,
+        salary:req.body.salary,
+        experience:req.body.experience,
+        education:req.body.education,
         owner:req.user
     }, (err, newApplication) => {
         if (err) {
