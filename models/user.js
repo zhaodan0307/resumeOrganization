@@ -6,7 +6,7 @@ const plm = require('passport-local-mongoose')
 
 let appUserSchema = new Schema({
     username:String,
-    psssword:String,
+    password:String,
 
     applications:
         [{

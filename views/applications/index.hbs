@@ -1,1 +1,11 @@
-<h1>ddsda</h1>
+{{#if user}}
+    <a href="/applications/create">Add a New Applications</a>
+{{/if}}
+
+
+<section class="row card-group">
+    {{#each applications}}
+        <h1>{{this}}</h1>
+    {{/each}}
+</section>
+© 2021 GitHub, Inc.
