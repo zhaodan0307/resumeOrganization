@@ -1,0 +1,212 @@
+<section class="main-section">
+
+    <h1 class="text-center row justify-content-center">Details of the Application</h1>
+    {{#if user}}
+        <div class="container mt-10">
+            <div class="card">
+                <div class="card-body text-center justify-content-center">
+                    <h3>{{application.position}}</h3>
+                    <div>
+                        <a href="/applications/edit/{{application._id}}" class="card-link btn btn-info">Edit Link</a>
+                        <a href="/applications" class="card-link btn btn-primary">Back Home</a>
+                    </div>
+                </div>
+
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col">
+                                <h5>Post Date</h5>
+                            </div>
+                            <div class="col">
+                                {{application.postDate}}
+                            </div>
+                        </div>
+                        <hr>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col">
+                                <h5>Apply Date</h5>
+                            </div>
+                            <div class="col">
+                                {{application.applyDate}}
+                            </div>
+                        </div>
+                        <hr>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col">
+                                <h5>Apply Deadline</h5>
+                            </div>
+                            <div class="col">
+                                {{application.applyDeadline}}
+                            </div>
+                        </div>
+                        <hr>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col">
+                                <h5>Start Day</h5>
+                            </div>
+                            <div class="col">
+                                {{application.startDay}}
+                            </div>
+                        </div>
+                        <hr>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col">
+                                <h5>Company</h5>
+                            </div>
+                            <div class="col">
+                                {{application.company}}
+                            </div>
+                        </div>
+                        <hr>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col">
+                                <h5>Job Position</h5>
+                            </div>
+                            <div class="col">
+                                {{application.position}}
+                            </div>
+                        </div>
+                        <hr>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col">
+                                <h5>Job Type</h5>
+                            </div>
+                            <div class="col">
+                                {{application.type}}
+                            </div>
+                        </div>
+                        <hr>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col">
+                                <h5>Job Location</h5>
+                            </div>
+                            <div class="col">
+                                {{application.location}}
+                            </div>
+                        </div>
+                        <hr>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col">
+                                <h5>Job Term</h5>
+                            </div>
+                            <div class="col">
+                                {{application.term}}
+                            </div>
+                        </div>
+                        <hr>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col">
+                                <h5>Job Salary</h5>
+                            </div>
+                            <div class="col">
+                                {{application.salary}}
+                            </div>
+                        </div>
+                        <hr>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col">
+                                <h5>Experience Expectation</h5>
+                            </div>
+                            <div class="col">
+                                {{application.experience}}
+                            </div>
+                        </div>
+                        <hr>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col">
+                                <h5>Education Requirement</h5>
+                            </div>
+                            <div class="col">
+                                {{application.education}}
+                            </div>
+                        </div>
+                        <hr>
+                    </li>
+
+
+
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col">
+                                <h5>Qualification</h5>
+                            </div>
+                            <div class="col">
+                                {{application.qualification}}
+                            </div>
+                        </div>
+                        <hr>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col">
+                                <h5>Duty of Position</h5>
+                            </div>
+                            <div class="col">
+                                {{application.duty}}
+                            </div>
+                        </div>
+                        <hr>
+                    </li>
+
+                </ul>
+
+
+
+
+            </div>
+        </div>
+    {{/if}}
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

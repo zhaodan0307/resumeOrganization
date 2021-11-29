@@ -4,10 +4,10 @@ const {Schema} = require("mongoose");
 var applicationSchema = new mongoose.Schema({
 
 
-    postDate:Date,
-    applyDate:Date,
-    applyDeadline:Date,
-    startDay:Date,
+    postDate:String,
+    applyDate:String,
+    applyDeadline:String,
+    startDay:String,
     company:String,
     position:String,
     type:String,

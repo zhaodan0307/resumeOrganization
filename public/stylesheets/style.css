@@ -148,7 +148,7 @@ a {
 .form-control{
   background-color: #f8f9fa;
 
-  padding: 25px 15px;
+  padding: 15px 7px;
   margin-bottom: 1.3rem;
   border: 0.10rem solid darkseagreen;
 }
@@ -169,5 +169,58 @@ a {
 
 
 }
+.create{
+  border-radius: 3px;
+  border-color: #eeeee4;
+}
 
 
+
+
+input, textarea,select,input:focus {
+  border-radius: 15px !important;
+  background: #ecf0f1 !important;
+  box-shadow: inset 3px 3px 7px #c9cccd,
+  inset -3px -3px 7px #ffffff;
+  border: none !important;
+  /* Below gets rid of the default chrome styles for autocomplete */
+  outline: 0 !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+}
+.banner{
+  background-color: rgb(123,139,111);
+}
+
+a {
+  text-decoration: none;
+}
+
+.-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 25px;
+  text-align: center;
+  border-radius: 12px;
+  margin-top: 12px;
+  margin-left: 16px;
+  margin-bottom: 0px;
+}
+
+.-btn:hover {
+  opacity: .4;
+}
+
+.-bg {
+  background: rgb(181,196,177);
+}
+
+.card-body{
+  margin-top: 2px;
+  padding-top: 0px;
+}
+.btn-info{
+  background-color: rgb(198,175,117);
+}

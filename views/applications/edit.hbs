@@ -1,7 +1,7 @@
 <div class="container">
 
     <header class="jumbotron my-5">
-        <h1 class="display-4">Add Applications</h1>
+        <h1 class="display-4">Edit Applications</h1>
 
         <hr class="my-4">
 
@@ -14,25 +14,25 @@
                 <div class="col">
                     <div class="form-group">
                         <label for="postDate">Post Date:</label>
-                        <input class="form-control datePicker"  type="date" name="postDate" required >
+                        <input class="form-control datePicker"  type="date" name="postDate" value="{{application.postDate}}" required >
                     </div>
                 </div >
                 <div class="col">
                     <div lass="form-group">
                         <label for="applyDate">Apply Date:</label>
-                        <input class="form-control datePicker" type="date" name="applyDate" required >
+                        <input class="form-control datePicker" type="date" name="applyDate" value="{{application.applyDate}}" required >
                     </div>
                 </div>
                 <div class="col">
                     <div lass="form-group">
                         <label for="applyDeadline">Apply Deadline:</label>
-                        <input class="form-control datePicker" type="date" name="applyDeadline" required >
+                        <input class="form-control datePicker" type="date" name="applyDeadline" value="{{application.applyDeadline}}" required >
                     </div>
                 </div>
                 <div class="col">
                     <div lass="form-group">
                         <label for="startDay">Start Day:</label>
-                        <input class="form-control datePicker" type="date" name="startDay" required >
+                        <input class="form-control datePicker" type="date" name="startDay" value="{{application.startDay}}"  required >
                     </div>
                 </div>
             </div>
@@ -41,20 +41,21 @@
                 <div class="col-4" >
                     <div class="form-group">
                         <label for="company">Company</label>
-                        <input class="form-control" type="text" name="company" placeholder="Google Inc." required>
+                        <input class="form-control" type="text" name="company" placeholder="Google Inc." value="{{application.company}}"  required>
                     </div>
                 </div>
 
                 <div class="col-5">
                     <div class="form-group">
                         <label for="position">Job Position</label>
-                        <input class="form-control" type="text" name="position" placeholder="Software Developer" required>
+                        <input class="form-control" type="text" name="position" placeholder="Software Developer" value="{{application.position}}"  required>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="form-group">
                         <label for="">Job Type</label>
-                        <input class="form-control" type="text" name="type" placeholder="Full-Time" required>
+
+                        <input class="form-control" type="text" name="type" placeholder="Full-Time" value="{{application.type}}" required>
                     </div>
                 </div>
 
@@ -65,7 +66,7 @@
                 <div class="col">
                     <div class="form-group">
                         <label for="term">Job Term</label>
-                        <input class="form-control" type="text" name="term" placeholder="4 months" required>
+                        <input class="form-control" type="text" name="term" placeholder="4 months" value="{{application.term}}" required>
                     </div>
 
                 </div>
@@ -74,27 +75,27 @@
 
                     <div class="form-group">
                         <label for="salary">Job Salary</label>
-                        <input class="form-control" type="text" name="salary" placeholder="$40 / hour" required>
+                        <input class="form-control" type="text" name="salary" placeholder="$40 / hour" value="{{application.salary}}" required>
                     </div>
 
                 </div>
                 <div class="col">
                     <div class="form-group">
                         <label for="location">Job Location</label>
-                        <input class="form-control" type="text" name="location" placeholder="Toronto,ON,Canada" required>
+                        <input class="form-control" type="text" name="location" placeholder="Toronto,ON,Canada" value="{{application.location}}" required>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <label for="experience">Experience Expectation</label>
-                    <input class="form-control" type="text" name="experience" placeholder="1-3 years" required>
+                    <input class="form-control" type="text" name="experience" placeholder="1-3 years" value="{{application.experience}}" required>
 
                 </div>
 
                 <div class="col">
                     <label for="education">Education Requirement</label>
-                    <input class="form-control" type="text" name="education" placeholder="diploma" required>
+                    <input class="form-control" type="text" name="education" placeholder="diploma" value="{{application.education}}" required>
 
                 </div>
 
@@ -103,19 +104,19 @@
             <div class="row">
                 <div class="col">
                     <label for="duty">Duty of Position</label>
-                   <textarea class="form-control" name="duty" required rows="3"></textarea>
+                    <textarea class="form-control" name="duty" required rows="3">{{application.duty}}</textarea>
 
                 </div>
                 <div class="col">
                     <label for="qualification">Qualifications</label>
-                    <textarea class="form-control" name="qualification" required rows="3"></textarea>
+                    <textarea class="form-control" name="qualification"  required rows="3">{{application.qualification}}</textarea>
 
                 </div>
 
             </div>
 
             <button class="btn btn-primary" type="submit">Submit</button>
-            <button class="btn btn-light text-danger ml-3" type="reset">Reset</button>
+            <a href="/applications/edit/{{application._id}}" class="btn btn-light text-danger ml-3" onclick="back()">Go Back</a>
         </form>
     </section>
 </div>
