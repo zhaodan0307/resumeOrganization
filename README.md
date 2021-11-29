@@ -8,4 +8,3 @@ As cs students about to graduate, we must apply for many jobs every day. However
 when we get the interview, we often cannot find the specific information of the job we
 applied for before. The system enables us to quickly search for Posting jobs we
 applied for, to help us prepare for the following interview.
-
