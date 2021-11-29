@@ -177,7 +177,7 @@ a {
 
 
 
-input, textarea,select,input:focus {
+input,textarea,input:focus {
   border-radius: 15px !important;
   background: #ecf0f1 !important;
   box-shadow: inset 3px 3px 7px #c9cccd,
@@ -205,7 +205,7 @@ a {
   text-align: center;
   border-radius: 12px;
   margin-top: 12px;
-  margin-left: 16px;
+  margin-left: 5px;
   margin-bottom: 0px;
 }
 
@@ -215,6 +215,7 @@ a {
 
 .-bg {
   background: rgb(181,196,177);
+  border-radius: 0;
 }
 
 .card-body{
@@ -223,4 +224,12 @@ a {
 }
 .btn-info{
   background-color: rgb(198,175,117);
+}
+#filterInput{
+  padding:2px;
+  border-radius: 5px !important;
+  background: #ecf0f1 !important;
+  margin-left: 5px;
+  margin: 2px 5px;
+
 }

@@ -4,12 +4,13 @@
     {{#if user}}
     <div class="container mt-4">
         <div class="card">
-            <div class="card-header -btn -bg -txt">
-
-                <a href="/applications/create">Add a New</a>
+            <div class="card-header  ">
+                <a class="-btn -bg -txt" href="/applications/create">Add a New</a>
+                <input class="form-control col align-self-end" id="filterInput" type="text" placeholder="Search..">
             </div>
-            <div class="card-body">
-                <table class="table table-hover">
+
+             <div class="card-body">
+                <table class="table table-hover" id="myTable">
                     <thead >
                     <tr class="text-white banner">
                         <th>Start Day</th>
@@ -25,12 +26,12 @@
 
                         {{#each applications}}
                         <tr>
-                            <td>{{this.startDay}}</td>
-                            <td>{{this.position}}</td>
-                            <td>{{this.company}}</td>
-                            <td>{{this.type}}</td>
-                            <td>{{this.salary}}</td>
-                            <td>{{this.location}}</td>
+                            <td><a href="/applications/details/{{this._id}}">{{this.startDay}}</a></td>
+                            <td><a href="/applications/details/{{this._id}}">{{this.position}}</a></td>
+                            <td><a href="/applications/details/{{this._id}}">{{this.company}}</a></td>
+                            <td><a href="/applications/details/{{this._id}}">{{this.type}}</a></td>
+                            <td><a href="/applications/details/{{this._id}}">{{this.salary}}</a></td>
+                            <td><a href="/applications/details/{{this._id}}">{{this.location}}</a></td>
                             <td>
                                 <a href="/applications/details/{{this._id}}" class="btn btn-info btn-sm text-dark">Details</a>
                                 <a href="/applications/edit/{{this._id}}" class="btn btn-secondary text-light btn-sm">Edit</a>
