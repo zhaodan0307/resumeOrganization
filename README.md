@@ -11,9 +11,15 @@ applied for, to help us prepare for the following interview.
 
 #New Feature for my website
 
-1.Add Keyword Search to the data view page
+1.Add Keyword Search to the data view page and when we click the 
+  keyword, we will link to the detail of the selected application
 2.Show different View for different user.
 
 #link of the website on heroku
 
 https://applications-organization.herokuapp.com/
+
+#provide a user and password to test 
+
+username: user@gc.ca
+password:zhaodan0307
